@@ -83,7 +83,7 @@ body {
     padding: 1.54em 1.54em 1.54em 1.15em;
     display: grid;
     grid-template-columns: 4rem 1fr max-content;
-    gap: 0.77em;
+    gap: 1em;
 }
 
 .conversation.active,
@@ -104,12 +104,22 @@ body {
 .title-text {
     font-weight: bold;
     color: #eee;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 
 .created-date {
     color: #ddd;
     white-space: nowrap;
     font-size: 1rem;
+}
+
+.conversation-message {
+    grid-column: span 2;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 
 .new-message-container {
