@@ -48,6 +48,29 @@ body {
     box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
     z-index: 1;
     grid-area: search-container;
+    padding: 0 2em;
+    display:grid;
+    align-items: center;
+}
+
+.search-container input {
+    color: #eee;
+    outline: none;
+    font-weight: bold;
+    border-radius: 2px;
+    height: 2.14em;
+    border: 0;
+    padding-left: 3.43em;
+    padding-right: 1.43em;
+    font-size: 1.4rem;
+    background: url('../images/search/search.svg') no-repeat rgba(255, 255, 255, 0.3);
+    background-position: 1em center;
+    background-size: 1.43em 1.43em;
+}
+
+.search-container input::placeholder {
+    color: #ddd;
+    font-weight: bold;
 }
 
 .conversation-list {
