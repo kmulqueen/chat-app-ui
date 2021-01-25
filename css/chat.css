@@ -48,9 +48,8 @@ body {
     box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
     z-index: 1;
     grid-area: search-container;
-    padding: 0 2em;
     display:grid;
-    align-items: center;
+    place-items: center center;
 }
 
 .search-container input {
