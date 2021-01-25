@@ -115,7 +115,8 @@ body {
     align-items: center;
 }
 
-.chat-title > img {
+.chat-title > img 
+.chat-form > img {
     cursor: pointer;
 }
 
@@ -127,4 +128,19 @@ body {
     border-radius: 0 0 10px 0;
     border-top: 1px solid rgba(0,0,0,0.25);
     grid-area: chat-form;
+    padding: 0 4.2em 0 2.2em;
+    display: grid;
+    grid: 4rem / 3rem 1fr;
+    align-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.chat-form input {
+    outline: none;
+    padding: 1em;
+    border: 2px solid #ddd;
+    color: #330;
+    border-radius: 6px;
+    font-size: 1.4rem;
 }
