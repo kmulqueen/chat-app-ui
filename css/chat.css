@@ -108,6 +108,15 @@ body {
     border-radius: 0 10px 0 0;
     box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
     grid-area: chat-title;
+    padding: 0 1em;
+    display: grid;
+    grid: 3.6rem / 1fr 3.6rem;
+    align-content: center;
+    align-items: center;
+}
+
+.chat-title > img {
+    cursor: pointer;
 }
 
 .chat-message-list {
