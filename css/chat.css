@@ -76,6 +76,42 @@ body {
     grid-area: conversation-list;
 }
 
+.conversation {
+    color: #ddd;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #002C88;
+    padding: 1.54em 1.54em 1.54em 1.15em;
+    display: grid;
+    grid-template-columns: 4rem 1fr max-content;
+    gap: 0.77em;
+}
+
+.conversation.active,
+.conversation:hover {
+    background: #002C88;
+}
+
+.conversation:hover {
+    cursor: pointer;
+}
+
+.conversation > img {
+    height: 4rem;
+    border-radius: 100%;
+    grid-row: span 2;
+}
+
+.title-text {
+    font-weight: bold;
+    color: #eee;
+}
+
+.created-date {
+    color: #ddd;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
 .new-message-container {
     border-top: 1px solid rgba(0,0,0,0.25);
     border-radius: 0 0 0 10px;
