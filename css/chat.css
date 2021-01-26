@@ -178,6 +178,17 @@ body {
 
 .message-row {
     margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: 70%;
+}
+
+.other-message {
+    justify-items: start;
+}
+
+.you-message {
+    justify-items: end;
+    justify-content: end;
 }
 
 .message-time {
