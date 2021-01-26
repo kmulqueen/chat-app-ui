@@ -174,6 +174,8 @@ body {
     display: flex;
     flex-direction: column-reverse;
     padding: 0 2em;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .message-row {
@@ -182,13 +184,32 @@ body {
     grid-template-columns: 70%;
 }
 
+.message-content {
+    display: grid;
+}
+
+.message-content > img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    grid-row: span 2;
+}
+
 .other-message {
     justify-items: start;
 }
 
+.other-message .message-content {
+    grid-template-columns: 4rem 1fr;
+    column-gap: 1em;
+}
+
 .you-message {
-    justify-items: end;
     justify-content: end;
+}
+
+.you-message .message-content {
+    justify-items: end;
 }
 
 .message-time {
